@@ -32,6 +32,9 @@ $primary-color: #eb2f64;
   --grey-dark-3: #999;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 6rem rgba(0, 0, 0, 0.1);
+
+  --line: solid 1px var(--grey-light-2);
 }
 
 * {
@@ -57,6 +60,5 @@ body {
   color: var(--grey-dark-2);
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   background-size: cover;
-  max-height: 100vh;
   max-width: 100vw;
 }
