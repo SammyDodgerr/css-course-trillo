@@ -1,3 +1,5 @@
+@import 'sass/base';
+
 ///////////////////////////////////////////////
 // LOGO
 .logo {
@@ -138,6 +140,12 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @media (max-width: 400px){
+    span {
+      display: none;
+    }
+  }
+
   @media only screen and (max-width: $bp-medium) {
     margin: 0;
     display: flex;
@@ -232,6 +240,8 @@
   display: flex;
   border-bottom: solid 1px var(--grey-light-2);
   align-items: center;
+  max-width: 100vw;
+  overflow: hidden;
 
   &-heading {
     font-size: 2.25rem;
